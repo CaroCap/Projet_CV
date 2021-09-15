@@ -1,0 +1,21 @@
+<map version="1.0.1">
+<!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
+<node CREATED="1631277554250" ID="ID_1892584551" MODIFIED="1631281179742" TEXT="Homepage">
+<icon BUILTIN="gohome"/>
+<node CREATED="1631278018382" HGAP="26" ID="ID_221660097" MODIFIED="1631282814481" POSITION="right" TEXT="About Me" VSHIFT="-28">
+<icon BUILTIN="female2"/>
+<node CREATED="1631281231044" HGAP="17" ID="ID_851880556" MODIFIED="1631282275030" TEXT="Experiences" VSHIFT="27"/>
+</node>
+<node CREATED="1631278069599" HGAP="38" ID="ID_1251736636" MODIFIED="1631282816442" POSITION="right" TEXT="Skills" VSHIFT="18">
+<icon BUILTIN="bookmark"/>
+<node CREATED="1631282786603" HGAP="26" ID="ID_1057384081" MODIFIED="1631282811089" TEXT="Logiciels" VSHIFT="37"/>
+</node>
+<node CREATED="1631278145018" HGAP="29" ID="ID_1954529447" MODIFIED="1631282706419" POSITION="right" TEXT="Portfolio" VSHIFT="41">
+<icon BUILTIN="folder"/>
+<node CREATED="1631278226093" HGAP="19" ID="ID_1565689255" LINK="http://www.if3projets.net/wad20/thao/#home" MODIFIED="1631282660387" TEXT="Projet" VSHIFT="33"/>
+</node>
+<node CREATED="1631282363394" HGAP="33" ID="ID_1986487421" LINK="mailto:carolinecap.event@gmail.com" MODIFIED="1631282617434" POSITION="right" TEXT="Contact" VSHIFT="25">
+<node CREATED="1631282408756" HGAP="36" ID="ID_3844359" LINK="CV.jpg" MODIFIED="1631282496785" TEXT="CV" VSHIFT="57"/>
+</node>
+</node>
+</map>
