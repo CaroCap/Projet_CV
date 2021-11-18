@@ -34,7 +34,7 @@
                 <li class="nav-item">
                     <a class="nav-link beige-color font-titre" href="#portfolioSection"><img class="nav-icone" src="./assets/images/icones/icone-portfolio-beige.png" alt="Portfolio">Portfolio</a>
                 </li>
-                <!-- Langue -->
+                <!-- ! Langue -->
                 <!-- <li class="nav-item">
                     <a class="nav-link beige-color font-titre" href=""><img class="nav-icone" src="./assets/images/icones/switch-droit-beige.png" alt="Switch Langue">FR</a>
                 </li> -->
@@ -47,15 +47,15 @@
         <section id="aboutMeSection">
             <div class="separationBlanc"> </div>
             <header>
-                <div>
-                    <h2 class="font-titre">About Me</h2>
-                    <h3 class=" tab-20 font-sousTitre">Caroline Cap</h3>
-                    <h4 class="tab30 font-sousTitre">Web Developer Junior</h4>
+                <div class="container">
+                    <h2 class="taille50 font-titre">About Me</h2>
+                    <h3 class="taille50 font-sousTitre">Caroline Cap</h3>
+                    <h4 class="taille100 font-sousTitre">Web Developer Junior</h4>
                 </div>
             </header>
 
             <div class="container">
-                <div class="presentation container">
+                <div class="presentation container justifyAround">
                     <!-- logo contacts -->
                     <div class="logo-contacts container colonne">
                         <a href="mailto: carolinecap.event@gmail.com">
@@ -66,30 +66,37 @@
                             <img class="logo-header" src="./assets/images/icones/icone-github-brun.png" alt="Icone Github"></a>
                     </div>
                     <!-- Photo Profil -->
-                    <img class="photoProfil" src="./assets/images/photo-ronde.png" alt="Photo Caro">
+                    <div class="photoProfil">
+                        <img class="photo" src="./assets/images/photo-ronde.png" alt="Photo Caro">
+                    </div>
+                    
                     <!-- logo CV Portfolio -->
                     <div class="container colonne" id="logosCVportf">
                         <a class="container colonne" href="#portfolioSection">
                             <img class="logo-header" src="./assets/images/icones/icone-portfolio-brun.png" alt="Icone Email">Voir le Portfolio
                         </a>
-                        <a class="container colonne" href="./assets/images/Caroline_CAP_CV.pdf" Download>
+                        <a class="container colonne" href="./assets/images/Caroline_CAP_CV.pdf" target="_blank">
                             <img class="logo-header" src="./assets/images/icones/CV-brun.png" alt="Icone Linkedin">CV Download
                         </a>
                     </div>
                 </div>
 
                 <!-- Infos -->
-                <div class="infoContact container colonne">
-                    <div class="info"><span class="label upper">Age</span> <span id="ageCaro">31 ans</span></div>
-                    <div class="info"><span class="label upper">Localisation</span> <span>Forest</span></div>
-                    <div class="info"><span class="label upper">Permis</span> <span>Permis B</span></div>
+                <div class="infosContact">
+                    <div class="infoContact container colonne">
+                        <div class="info"><span class="label upper">Age</span> <span id="ageCaro">31 ans</span></div>
+                        <div class="info"><span class="label upper">Localisation</span> <span>Forest</span></div>
+                        <div class="info"><span class="label upper">Permis</span> <span>Permis B</span></div>
+                    </div>
                 </div>
 
                 <div class="recherche">
                     <span>Je recherche actuellement un stage en tant que <b>Web Développeuse</b>.</span>
                     <div>
-                        <a href=""><img class="logo-header" src="./assets/images/icones/plus-brun.png" alt="signe plus">                        
-                            <h4>Découvrir plus...</h4></a>
+                        <button id="modalDecouvrirPlus">
+                            <img class="logo-plus"  src="./assets/images/icones/plus-brun.png" alt="signe plus">                        
+                            <h4>Découvrir plus...</h4>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -114,9 +121,9 @@
             <div class="separationBlanc"> </div>
             <h2 class="font-titre">Portfolio</h2>
             
-            <!-- ? FILTRES ? -->
+            <!-- ! FILTRES ? -->
 
-            <div class="container">
+            <div class="container justifyAround">
                 <div class="projetPorfolio">
                     <img class="imagePortfolio" src="./assets/images/projet portfolio/pacman.png" alt="Projet Pacman">
                 </div>
@@ -146,7 +153,7 @@
 
         <div class="container">
             <div class="container colonne">
-                <span class="font-titre">Contact Me</span>
+                <span class="font-titre contactMe">Contact Me</span>
                 <div>
                     <a href="mailto: carolinecap.event@gmail.com"><img class="logo-footer" src="./assets/images/icones/enveloppe-gris.png" alt="Icone Email"></a>
                     <a href="linkedin.com/in/caroline-cap-aab73720b/" target="_blank"><img class="logo-footer" src="./assets/images/icones/icon-linkedin-gris.png" alt="Icone Linkedin"></a>
@@ -160,5 +167,19 @@
 
     </footer>
 
+<!-- MODALS -->
+
+    <!-- The Modal -->
+<div id="decouvrirPlus" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+    </div>
+
+</div>
+
+<script src="./scripts/scripts.js"></script>
 </body>
 </html>
