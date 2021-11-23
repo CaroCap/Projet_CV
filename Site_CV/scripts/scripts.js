@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // AGE
 const BIRTHDATE_CARO = new Date(1990,01,16)
 
@@ -9,9 +8,6 @@ function getAge(birthdate){
 }
 document.getElementById("ageCaro").innerHTML = getAge(BIRTHDATE_CARO) + " ans";
 document.getElementById("ageCaroModal").innerHTML = getAge(BIRTHDATE_CARO) + " ans";
-=======
-
->>>>>>> origin/master
 
 
 
