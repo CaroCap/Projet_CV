@@ -64,6 +64,7 @@ body{
 }
 
 /* GENERAL */
+/* Flex */
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -72,16 +73,26 @@ body{
     padding-left: 15px;
     padding-right: 15px;
 }
-
+.justifyAround{
+    justify-content: space-around;
+}
 .colonne{
     flex-direction: column;
+}
+
+/* alignement */
+.center{
+    text-align: center;
+    margin: auto;
+}
+.droite{
+    text-align: end;
 }
 
 .separationBlanc{
 width: 100%;
 height: 20vh;
 }
-
 .separation{
     width: 90%;
     margin: 20px auto;
@@ -90,6 +101,9 @@ height: 20vh;
 
 .upper{
     text-transform: uppercase;
+}
+.souligne{
+    text-decoration: underline;
 }
 
 
@@ -116,7 +130,7 @@ height: 20vh;
 h2{
     font-size: 4.5vw;
     font-weight: lighter;
-    margin-left: -40%;
+    margin-bottom: 2vw;
 }
 h3{
     font-size: 4vw;
@@ -127,12 +141,32 @@ h4{
     font-weight: lighter;
 }
 
+/* Width */
+.taille30{
+    width: 30%;
+}
+.taille40{
+    width: 40%;
+}
+.taille50{
+    width: 50%;
+}
+.taille65{
+    width: 65%;
+}
+.taille95{
+    width: 95%;
+}
+.taille100{
+    width: 100%;
+}
+
 /* NAVIGATION */
 .barre-navigation{
     background-color: var(--brun_color);
     z-index: 10; /*pour que ça reste au premier plan*/
     width: 100%;
-    height: 20vh;
+    height: 17vh;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -142,7 +176,7 @@ h4{
 
 /* Logos dans nav*/
 .nav-logo {
-    height: 10vh;
+    height: 7vw;
     width: auto;
 }
 .nav-icone{
@@ -174,47 +208,48 @@ h4{
 
 /* HEADER */
 header{
-    padding-top: 5vh;
+    /* padding-top: 5vh; */
 }
 
 .logo-header{
     width: 5vw;
     height: auto;
-    margin: 1vw;
+    margin: 1vw auto;
 }
 
 /* MAIN */
-main{
-    width: 95%;
-    margin:auto;
-}
 
 /* ABOUT ME */
 .presentation{
-    width: 75%;
-    margin: 3vw auto;
+    margin: 1vw auto;
 }
 
 .logo-contacts{
     width: 25%;
 }
 .photoProfil{
-    width: 40%;
+    width: 50%;
+}
+.photo{
     border: var(--brun_color) solid 2vw;
     border-radius: 50%;
-    width: 25vw;
+    width: 70%;
     height: auto;
     box-shadow: -5px 12px 18px -2px #888888;
 }
-.logosCVportf{
+#logosCVportf{
     width: 25%;
+}
+.infosContact{
+width: 100%;
 }
 .infoContact{
     border: var(--brun_color) solid 2vw;
     padding: 3vw;
     background-color: var(--beige_color);
-    width: 30vw;
+    /* width: 30vw; */
     box-shadow: -5px 12px 18px -2px #888888;
+    margin: auto;
 }
 .info{
     width: 100%;
@@ -223,17 +258,25 @@ main{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1vw;
+    margin: auto;
 }
-.label{
+.bold{
     font-weight: bold;
+}
+.logo-plus{
+    width: 3vw;
+    height: auto;
+    margin-top: 2.5vw;
+    margin-bottom: 0.5vw;
 }
 .recherche{
     width: 100%;
     margin-top: 7vh;
-    text-align: center;
+    font-size: 1.5vw;
 }
 
 /* PORTFOLIO */
+
 .projetPorfolio{
     width: 24%;
     height: auto;
@@ -243,7 +286,6 @@ main{
     margin-top: 1vw;
 
 }
-
 .imagePortfolio{
     width:100%;
 }
@@ -252,8 +294,75 @@ main{
 footer{
     margin-bottom: 5vh;
 }
-
+.contactMe{
+    font-size: 2vw;
+    margin-bottom: 10px;
+}
 .logo-footer{
-    max-height: 7vh;
+    max-height: 5vw;
     width: auto;
 }
+
+
+
+
+
+/* MODALS */
+    .modalClic{
+        border: none;
+        background-color: transparent;
+    }
+
+    .modalClic:hover{
+        cursor: pointer;
+        text-decoration: wavy underline;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 20; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        border-radius: 15px;
+        width: 85%;
+    }
+    
+    /* The Close Button */
+    .close {
+        color: var(--gris_color);
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* 
+    .barreBrunegauche{
+        background-color: var(--brun_color);
+        position: relative;
+        z-index: 30;
+        left: 0;
+        top: 0;
+        width: 25%; 
+        height: 100%; 
+    } */

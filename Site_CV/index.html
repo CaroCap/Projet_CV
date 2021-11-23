@@ -34,7 +34,7 @@
                 <li class="nav-item">
                     <a class="nav-link beige-color font-titre" href="#portfolioSection"><img class="nav-icone" src="./assets/images/icones/icone-portfolio-beige.png" alt="Portfolio">Portfolio</a>
                 </li>
-                <!-- Langue -->
+                <!-- ! Langue -->
                 <!-- <li class="nav-item">
                     <a class="nav-link beige-color font-titre" href=""><img class="nav-icone" src="./assets/images/icones/switch-droit-beige.png" alt="Switch Langue">FR</a>
                 </li> -->
@@ -42,20 +42,20 @@
         </div>
     </nav>
     
-    <main>
+    <main class="center taille95">
         <!-- ABOUT ME -->
         <section id="aboutMeSection">
             <div class="separationBlanc"> </div>
             <header>
-                <div>
-                    <h2 class="font-titre">About Me</h2>
-                    <h3 class=" tab-20 font-sousTitre">Caroline Cap</h3>
-                    <h4 class="tab30 font-sousTitre">Web Developer Junior</h4>
+                <div class="container">
+                    <h2 class="taille50 font-titre">About Me</h2>
+                    <h3 class="taille50 font-sousTitre">Caroline Cap</h3>
+                    <h4 class="taille100 font-sousTitre">Web Developer Junior</h4>
                 </div>
             </header>
 
             <div class="container">
-                <div class="presentation container">
+                <div class="taille65 presentation container justifyAround">
                     <!-- logo contacts -->
                     <div class="logo-contacts container colonne">
                         <a href="mailto: carolinecap.event@gmail.com">
@@ -66,30 +66,37 @@
                             <img class="logo-header" src="./assets/images/icones/icone-github-brun.png" alt="Icone Github"></a>
                     </div>
                     <!-- Photo Profil -->
-                    <img class="photoProfil" src="./assets/images/photo-ronde.png" alt="Photo Caro">
+                    <div class="photoProfil">
+                        <img class="photo" src="./assets/images/photo-ronde.png" alt="Photo Caro">
+                    </div>
+                    
                     <!-- logo CV Portfolio -->
                     <div class="container colonne" id="logosCVportf">
                         <a class="container colonne" href="#portfolioSection">
                             <img class="logo-header" src="./assets/images/icones/icone-portfolio-brun.png" alt="Icone Email">Voir le Portfolio
                         </a>
-                        <a class="container colonne" href="./assets/images/Caroline_CAP_CV.pdf" Download>
+                        <a class="container colonne" href="./assets/images/Caroline_CAP_CV.pdf" target="_blank">
                             <img class="logo-header" src="./assets/images/icones/CV-brun.png" alt="Icone Linkedin">CV Download
                         </a>
                     </div>
                 </div>
 
                 <!-- Infos -->
-                <div class="infoContact container colonne">
-                    <div class="info"><span class="label upper">Age</span> <span id="ageCaro">31 ans</span></div>
-                    <div class="info"><span class="label upper">Localisation</span> <span>Forest</span></div>
-                    <div class="info"><span class="label upper">Permis</span> <span>Permis B</span></div>
+                <div class="infosContact">
+                    <div class="infoContact taille30 container colonne">
+                        <div class="info"><span class="bold upper">Age</span> <span id="ageCaro">ans</span></div>
+                        <div class="info"><span class="bold upper">Localisation</span> <span>Forest</span></div>
+                        <div class="info"><span class="bold upper">Permis</span> <span>Permis B</span></div>
+                    </div>
                 </div>
 
                 <div class="recherche">
                     <span>Je recherche actuellement un stage en tant que <b>Web Développeuse</b>.</span>
                     <div>
-                        <a href=""><img class="logo-header" src="./assets/images/icones/plus-brun.png" alt="signe plus">                        
-                            <h4>Découvrir plus...</h4></a>
+                        <button class="modalClic" id="modalDecouvrirPlus">
+                            <img class="logo-plus"  src="./assets/images/icones/plus-brun.png" alt="signe plus">                        
+                            <h4 class="sous">Découvrir plus...</h4>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -114,9 +121,9 @@
             <div class="separationBlanc"> </div>
             <h2 class="font-titre">Portfolio</h2>
             
-            <!-- ? FILTRES ? -->
+            <!-- ! FILTRES ? -->
 
-            <div class="container">
+            <div class="container justifyAround">
                 <div class="projetPorfolio">
                     <img class="imagePortfolio" src="./assets/images/projet portfolio/pacman.png" alt="Projet Pacman">
                 </div>
@@ -146,7 +153,7 @@
 
         <div class="container">
             <div class="container colonne">
-                <span class="font-titre">Contact Me</span>
+                <span class="font-titre contactMe">Contact Me</span>
                 <div>
                     <a href="mailto: carolinecap.event@gmail.com"><img class="logo-footer" src="./assets/images/icones/enveloppe-gris.png" alt="Icone Email"></a>
                     <a href="linkedin.com/in/caroline-cap-aab73720b/" target="_blank"><img class="logo-footer" src="./assets/images/icones/icon-linkedin-gris.png" alt="Icone Linkedin"></a>
@@ -160,5 +167,103 @@
 
     </footer>
 
+<!-- MODALS -->
+
+    <!-- Découvrir Plus -->
+<div id="decouvrirPlus" class="modal">
+    <!-- contenu -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <!-- barre brune côté -->
+        <section id="aboutMeSection">
+            <header>
+                <div class="container">
+                    <h2 class="taille50 font-titre">About Me</h2>
+                    <h3 class="taille50 font-sousTitre">Caroline Cap</h3>
+                    <h4 class="taille100 font-sousTitre">Web Developer Junior</h4>
+                </div>
+            </header>
+
+            <div class="container">
+                <div class="taille95 presentation container justifyAround">
+                    <!-- logo contacts Modal-->
+                    <div class="logo-contacts container colonne">
+                        <a href="mailto: carolinecap.event@gmail.com">
+                            <img class="logo-header" src="./assets/images/icones/enveloppe-brun.png" alt="Icone Email"></a>
+                        <a href="linkedin.com/in/caroline-cap-aab73720b/" target="_blank">
+                            <img class="logo-header" src="./assets/images/icones/icone-linkedin-brun.png" alt="Icone Linkedin"></a>
+                        <a href="https://github.com/CaroCap?tab=repositories" target="_blank">
+                            <img class="logo-header" src="./assets/images/icones/icone-github-brun.png" alt="Icone Github"></a>
+                    </div>
+                    <!-- Photo Profil -->
+                    <div class="photoProfil">
+                        <img class="photo" src="./assets/images/photo-ronde.png" alt="Photo Caro">
+                    </div>
+                    
+                    <!-- logo CV Portfolio -->
+                    <div class="container colonne" id="logosCVportf">
+                        <a class="container colonne" href="#portfolioSection">
+                            <img class="logo-header" src="./assets/images/icones/icone-portfolio-brun.png" alt="Icone Email">Voir le Portfolio
+                        </a>
+                        <a class="container colonne" href="./assets/images/Caroline_CAP_CV.pdf" target="_blank">
+                            <img class="logo-header" src="./assets/images/icones/CV-brun.png" alt="Icone Linkedin">CV Download
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recher Modal -->
+                <div class="recherche">
+                    <div>Je recherche actuellement un stage en tant que <b>Web Développeuse</b>.</div>
+                    <br>
+                    <div>Je suis patiente et persévérante. Je suis très polyvalente, j’apprends vite et je suis organisée. J’assume avec plaisir mes responsabilités, j’aime travailler en équipe et je suis très sociable</div>
+                </div>
+
+                <!-- Infos Modal-->
+                <div class="infosContact">
+                    <div class="infoContact taille50 container colonne">
+                        <div class="info titreInfo"><span class="center font-titre upper souligne">Infos</span></div>
+                        <div class="info"><span class="bold upper">Age</span> <span class="droite" id="ageCaroModal">X ans</span></div>
+                        <div class="info"><span class="bold upper">Localisation</span> <span class="droite">Forest</span></div>
+                        <div class="info"><span class="bold upper">Permis</span> <span class="droite">Permis B</span></div>
+
+                        <div class="info titreInfo"><span class="center font-titre upper souligne">Certifications</span></div>
+                        <div class="info"><span class="bold upper">2020</span> <span class="droite">TOSA<wbr> Suite Office</span></div>
+                        <div class="info"><span class="bold upper">2020</span> <span class="droite">Aromatthérapie</span></div>
+                        <div class="info"><span class="bold upper">2011</span> <span class="droite">Graduat en Communication -ISALT</span></div>
+                        <div class="info"><span class="bold upper">2009</span> <span class="droite">Entraineur Arbitre -<nobr>Kin-Ball</nobr></span></div>
+                        <div class="info"><span class="bold upper">2008</span> <span class="droite">CESS à <nobr>l'école Decroly</nobr></span></div>
+                        <div class="info"><span class="bold upper">2002</span> <span class="droite">Dactylographie</span></div>
+
+                        <div class="info titreInfo"><span class="center font-titre upper souligne">Langues</span></div>
+                        <div class="info"><span class="bold upper">Français</span> <span class="droite">Langue Maternelle</span></div>
+                        <div class="info"><span class="bold upper">Anglais</span> <span class="droite">B1</span></div>
+                        <div class="info"><span class="bold upper">Neerlandais</span> <span class="droite">A2</span></div>
+                        <div class="info"><span class="bold upper">Italien</span> <span class="droite">Bien</span></div>
+                    </div>
+                </div>
+
+                <!-- HOBBYS Modal -->
+                <div class="hobbys">
+                    <h2 class="taille50 font-titre">Hobbys</h2>
+                    <div class="info titreInfo">
+                        <span class="center font-titre upper souligne">Musique-Théâtre</span>
+                    </div>
+                    <div><span>Piano depuis 1994
+                        Stage de Théâtre, Cours scolaire et cours parascolaire depuis 2000.</span></div>
+
+                    <div class="info titreInfo"><span class="center font-titre upper souligne">Voyages</span></div>
+                    <div><span>Nouvelle Calédonie, Europe, Australie, Nouvelle Zélande, Canada, Californie</span></div>
+
+                    <div class="info titreInfo"><span class="center font-titre upper souligne">Sport</span></div>
+                    <div><span>Actuellement du Kin Ball depuis 2005
+                        Mais aussi dans mon passé… 
+                        Basket, tennis, volley, frisbee ultimate, plongée, escalade, danse, équitation.</span></div>
+
+                    <!-- ! VIDEO KB -->
+            </div>
+    </div>
+</div>
+
+<script src="./scripts/scripts.js"></script>
 </body>
 </html>
