@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #illustr {
+    width: 44vw;
+    height: 100%;
+    color: #fff;
+  }
+  .details {
+    /* display: none; */
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+  }
+  .details div.details-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .details-header {
+    margin: 0;
+    height: 10vh;
+    padding-top: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .details-title {
+    margin-top: 3rem;
+    font-weight: 600;
+    font-size: 2rem;
+    font-variant: small-caps;
+    text-align: center;
+  }
+  .modal_itSkills_closer {
+    cursor: pointer;
+    width: 20vw;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    margin-bottom: 2rem;
+  }
+  .details-spacer {
+    min-width: 15%;
+  }
+  .details-main {
+    width: 95%;
+    text-align: left;
+    margin: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+    .skillprogress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8rem 0.5rem;
+  }
+  .progressbar {
+    order: 1;
+    height: 1rem;
+    width: 50%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .progressbar div {
+    display: block;
+    max-width: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: max-width 1s ease-in-out 0.6s;
+    background-color: #62bead;
+  }
+  #skills1-details .progressbar div {
+    background-color: #ec407a;
+  }
+  
+</style>
+<body>
+    <div id="modal_itSkills">   
+        <div id="illustr">illustration</div>   
+        <h2>Front-End</h2>   
+        <div id="skills1-details" class="details">               
+            <div class="details-contents">       
+                <div class="details-header">                     
+                    <div class="details-title">Front-End</div> 
+                </div>       
+                <div class="details-main"> 
+                    <div class="skillprogress"> 
+                        <div class="progressbar">             
+                            <div style="width: 55%"></div>           
+                        </div>           
+                        <span><span>HTML 5</span></span>         
+                    </div>         
+                    <div class="skillprogress">           
+                        <div class="progressbar">             
+                        <div style="width: 55%"></div>           
+                    </div>           
+                    <span>CSS 3</span>         
+                </div>         
+                <div class="skillprogress">           
+                    <div class="progressbar">             
+                        <div style="width: 55%"></div>           
+                    </div>           
+                    <span>Javascript</span>         
+                </div>         
+                <div class="skillprogress">           
+                    <div class="progressbar">             
+                        <div style="width: 55%"></div>           
+                    </div>           
+                    <span>Jquery</span>         
+                </div>         
+                <div class="skillprogress">           
+                    <div class="progressbar">             
+                        <div style="width: 55%"></div>           
+                    </div>           
+                    <span>React</span>         
+                </div>         
+                <div class="skillprogress">           
+                    <div class="progressbar">             
+                        <div style="width: 20%"></div>           
+                    </div>           
+                    <span>Angular (TS)</span>         
+                </div>         
+                <div class="skillprogress">           
+                    <div class="progressbar">             
+                        <div style="width: 10%"></div>           
+                    </div>           
+                    <span>Ajax</span>         
+                </div>         
+                <div class="skillprogress">           
+                    <div class="progressbar">             
+                        <div style="width: 55%"></div>          
+                    </div>           
+                    <span>Responsive</span>         
+                </div>         
+                <div class="skillprogress">           
+                    <div class="progressbar">             
+                        <div style="width: 20%"></div>           
+                    </div>           
+                    <span>Bootstrap</span>         
+                </div>         
+                <div class="skillprogress">           
+                    <div class="progressbar">             
+                        <div style="width: 20%"></div>           
+                    </div>           
+                    <span>Tailwind CSS</span>         
+                </div>       
+            </div>       
+            <div class="modal_itSkills_closer">close</div>     
+        </div>   
+    </div> 
+</body>
+</html>
