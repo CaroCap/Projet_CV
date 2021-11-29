@@ -299,7 +299,7 @@ width: 100%;
     height: 80px;
     border-radius: 50%;
     background-color: var(--gris_color);
-    border: 1px solid black;
+    border: 1px solid var(--gris_color);
     position: absolute;
     /* pour centrer */
     left: 50%;
@@ -556,3 +556,35 @@ footer{
         width: 25%; 
         height: 100%; 
     } */
+
+
+    /* RESPONSIVE */
+
+    @media screen and (max-width: 1000px) {
+    /* Width +20% (max 100%*/
+    .taille30{
+        width: 50%;
+    }
+    .taille40{
+        width: 60%;
+    }
+    .taille50{
+        width: 70%;
+    }
+    .taille65{
+        width: 85%;
+    }
+    .taille80{
+        width: 100%;
+    }
+    .taille95{
+        width: 100%;
+    }
+    .taille100{
+        width: 100%;
+    }
+
+    .recherche{
+        font-size: 12px;
+    }
+    }
