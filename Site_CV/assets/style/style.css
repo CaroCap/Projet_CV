@@ -283,13 +283,13 @@ width: 100%;
 /* TIMELINE */
 .box-timeline{
     width: 100%;
-    height: 1500px;
+    height: 2200px;
     position: relative;
-    padding: 80px 0 250px 0;
+    padding: 80px 0 50px 0;
     margin-bottom: 100px;
 }
 .ligne{
-    height: 1000px;
+    height: 2000px;
     width: 8px;
     margin:0 auto;
     background-color: var(--gris_color);
@@ -310,11 +310,15 @@ width: 100%;
     align-items: center;
     font-size: 40px;
 }
-/* 1000px(height .ligne) - 160(taille 1e rond + taille dernier rond) + 80(pading-top) /3(nombre d'espaces entre ronds)*/
+/* 2000px(height .ligne) - 160(taille 1e rond + taille dernier rond) + 80(pading-top) /7(nombre d'espaces entre ronds) = 274*/
 .r1{top:80px;}
-.r2{top:386px;}
-.r3{top:692px;}
-.r4{top:1000px;}
+.r2{top:calc(80px + 274px * 1);}
+.r3{top:calc(80px + 274px * 2);}
+.r4{top:calc(80px + 274px * 3);}
+.r5{top:calc(80px + 274px * 4);}
+.r6{top:calc(80px + 274px * 5);}
+.r7{top:calc(80px + 274px * 6);}
+.r8{top:2000px;}
 
 .box{
     width: 400px;
@@ -337,22 +341,46 @@ width: 100%;
     left: calc(50% - 270px);
 }
 .b2{
-    top: 386px;
+    top: calc(80px + 274px * 1);
     left: calc(50% + 270px);
 }
 .b3{
-    top: 692px;
+    top: calc(80px + 274px * 2);
     left: calc(50% - 270px);
 }
 .b4{
-    top: 1000px;
+    top: calc(80px + 274px * 3);
+    left: calc(50% + 270px);
+}
+.b5{
+    top: calc(80px + 274px * 4);
+    left: calc(50% - 270px);
+}
+.b6{
+    top: calc(80px + 274px * 5);
+    left: calc(50% + 270px);
+}
+.b7{
+    top: calc(80px + 274px * 6);
+    left: calc(50% - 270px);
+}
+.b8{
+    top: 2000px;
     left: calc(50% + 270px);
 }
 
+.annee-timeline{
+    font-size: 28px;
+}
+.titre-timeline{
+    font-size: 15px;
+}
 .description-timeline{
-    text-align: left;
+    text-align: justify;
     line-height: 20px;
     margin: 10px 0 20px 0;
+    font-size: 13px;
+
 }
     /* RESPONSIVE TIMELINE */
     @media screen and (max-width: 1000px) {
@@ -362,9 +390,14 @@ width: 100%;
         }
         .rond{
             left: calc(50% - 200px);
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+
         }
         .box{
-            left: calc(50% + 50px);
+            left: calc(50% + 2vw);
+            width: 350px;
         }
     }
 
@@ -546,6 +579,20 @@ footer{
         cursor: pointer;
     }
 
+    /* Vidéo KB */
+    .video{
+        margin: 80px auto 80px auto;
+        width: auto;
+        background-color: transparent;
+        text-align: center;
+    }
+    
+    .video iframe{
+        border: none;
+        border-radius: 10px;
+        width: 100%;
+        height: 400px;
+    }
 /* 
     .barreBrunegauche{
         background-color: var(--brun_color);
