@@ -423,6 +423,7 @@ width: 100%;
 /* SKILLS */
 .titre-graphique{
     margin-left: -150px;
+    font-family: var(--font_sousTitre);
 }
 .skills-outils{
     width: 100vw;
@@ -440,7 +441,7 @@ width: 100%;
     justify-content: space-around;
     position: absolute;
     left: -210px;
-    height: 250px;
+    height: 270px;
     width: 500px;
 }
 .ligne-outil{
@@ -454,19 +455,18 @@ width: 100%;
     margin-left: 10px;
     max-width: 100px;
     text-align: right;
+    text-transform: uppercase;
 }
 .ligne-graphique-vertical{
     position: absolute;
-    height: 250px;
+    height: 270px;
     width: 3px;
-    /* left: 100px; */
     background-color: var(--gris_color);
     border-radius: 50%;
 }
 .ligne-graphique-horizontal{
     position: absolute;
-    bottom: 50px;
-    /* left: 100px; */
+    bottom: 25px;
     height: 3px;
     width: 270px;
     background-color: var(--gris_color);
