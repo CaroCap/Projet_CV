@@ -96,3 +96,13 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+// // EFFETS TITRE
+// const allItems = document.querySelectorAll('li');
+// const TL1 = new TimelineMax({paused:true});
+// window.addEventListener('load'){
+//     TL1.from(document.getElementById('aboutMe-title'), 1, {y: -100, opacity: 0})
+//     TL1.staggerFrom(allItems, 1, {y: -50, opacity: 0}, '-=1')
+
+//     TL1.play();
+// }

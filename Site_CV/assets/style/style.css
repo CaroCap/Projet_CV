@@ -69,6 +69,7 @@ body{
 .container{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-left: 15px;
@@ -76,6 +77,9 @@ body{
 }
 .justifyAround{
     justify-content: space-around;
+}
+.alignItemsRight{
+    align-items: flex-end;
 }
 .colonne{
     flex-direction: column;
@@ -90,6 +94,15 @@ body{
     text-align: end;
 }
 
+/* Position */
+.positionRel{
+    position: relative;
+}
+.positionAbs{
+    position: absolute;
+}
+
+/* Séparations */
 .separationBlanc{
 width: 100%;
 height: 20vh;
@@ -141,6 +154,10 @@ h4{
     font-size: 3vw;
     font-weight: lighter;
 }
+h5{
+    font-size: 2vw;
+    font-weight: lighter;
+}
 
 /* Width */
 .taille30{
@@ -158,6 +175,9 @@ h4{
 .taille80{
     width: 80%;
 }
+.taille90{
+    width: 90%;
+}
 .taille95{
     width: 95%;
 }
@@ -170,7 +190,6 @@ h4{
     background-color: var(--brun_color);
     z-index: 10; /*pour que ça reste au premier plan*/
     width: 100%;
-    height: 17vh;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -202,7 +221,7 @@ h4{
 }
 
 .nav-item{
-    font-size: 4vh;
+    font-size: 1.6vw;
 }
 
 .nav-item a:hover{
@@ -288,7 +307,7 @@ width: 100%;
     padding: 80px 0 50px 0;
     margin-bottom: 100px;
 }
-.ligne{
+.ligne-timeline{
     height: 2000px;
     width: 8px;
     margin:0 auto;
@@ -384,7 +403,7 @@ width: 100%;
 }
     /* RESPONSIVE TIMELINE */
     @media screen and (max-width: 1000px) {
-        .ligne{
+        .ligne-timeline{
             position: relative;
             left: -200px;
         }
@@ -401,7 +420,77 @@ width: 100%;
         }
     }
 
-    /* ! ajouter un media query pour moins de 500px */
+/* SKILLS */
+.titre-graphique{
+    margin-left: -150px;
+}
+.skills-outils{
+    width: 100vw;
+}
+.box-outils{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box-graphique{
+    margin-top: 10px;
+    height: 300px;
+}
+.liste-outils{
+    justify-content: space-around;
+    position: absolute;
+    left: -210px;
+    height: 250px;
+    width: 500px;
+}
+.ligne-outil{
+    justify-content: flex-end;
+}
+.img-graphique{
+    width: 25px;
+}
+.ligne-outil span{
+    margin-right: 20px;
+    margin-left: 10px;
+    max-width: 100px;
+    text-align: right;
+}
+.ligne-graphique-vertical{
+    position: absolute;
+    height: 250px;
+    width: 3px;
+    /* left: 100px; */
+    background-color: var(--gris_color);
+    border-radius: 50%;
+}
+.ligne-graphique-horizontal{
+    position: absolute;
+    bottom: 50px;
+    /* left: 100px; */
+    height: 3px;
+    width: 270px;
+    background-color: var(--gris_color);
+    border-radius: 50%;
+}
+.bloc-graphique-vide{
+    width: 250px;
+    height : 35px;
+    border: solid var(--gris_color) 3px;
+}
+.bloc-graphique-plein{
+    height : 32px;
+    background-color: var(--beige_color);
+}
+.barre-graphique{
+    width: 250px;
+}
+.complet80{
+    width: calc(250px / 100 * 80);
+}
+.complet90{
+    width: calc(250px / 100 * 90);
+}
+
 
 /* PORTFOLIO */
 
@@ -512,6 +601,8 @@ img.nextRightSecond{
     transform: translateX(-50%);
     bottom: 10px;
 } */
+
+
 
 /* FOOTER */
 footer{
@@ -624,6 +715,9 @@ footer{
     .taille80{
         width: 100%;
     }
+    .taille90{
+        width: 100%;
+    }
     .taille95{
         width: 100%;
     }
@@ -634,4 +728,6 @@ footer{
     .recherche{
         font-size: 12px;
     }
+
+    /* ! Faire responsive Graphiques !!! */
     }
