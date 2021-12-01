@@ -107,7 +107,7 @@ body{
 width: 100%;
 height: 20vh;
 }
-.separation{
+.separation-ligne{
     width: 90%;
     margin: 20px auto;
     border-top: solid var(--gris_color) 2px;
@@ -504,104 +504,8 @@ width: 100%;
 
 }
 .imagePortfolio{
-    /* width:100%; */
+    width:100%;
 }
-
-/* CAROUSEL PROJETS */
-#carousel{
-    position: relative;
-    height: 400px;
-    /* top: 50%;
-    transform: translateY(-50%);  */
-    overflow: hidden;
-    margin: auto;
-}
-    
-
-#carousel div{
-    position: absolute;
-    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
-    opacity: 1;
-}
-
-#carousel img{
-    width: 400px;
-    transition: width 1s;
-    border: var(--beige_color) solid 2vh;
-
-}
-
-.hideLeft{
-    left: 0%;
-    opacity: 0;
-    transform: translateY(50%) translateX(-50%);
-}
-
-img.hideLeft{
-    width: 200px;
-}
-
-.hideRight{
-    left: 100%;
-    opacity: 0;
-    transform: translateY(50%) translateX(-50%);
-}
-img.hideRight{
-    width: 200px;
-}
-.prev{
-    z-index: 5;
-    left: 30%;
-    transform: translateY(50px) translateX(-50%);
-}
-        
-img.prev{
-    width: 300px;
-}
-
-.prevLeftSecond{
-    z-index: 4;
-    left: 15%;
-    transform: translateY(50%) translateX(-50%);
-    opacity: .7;
-}
-img.prevLeftSecond{
-    width: 200px;
-}
-
-.selected{
-    z-index: 10;
-    left: 50%;
-    transform: translateY(0px) translateX(-50%);
-}
-.next{
-    z-index: 5;
-    left: 70%;
-    transform: translateY(50px) translateX(-50%);
-}
-
-img.nex{
-    width: 300px;
-}
-            
-.nextRightSecond{
-    z-index: 4;
-    left: 85%;
-    transform: translateY(50%) translateX(-50%);
-    opacity: .7;
-}
-        
-img.nextRightSecond{
-    width: 200px;
-}
-
-/* .buttons{
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 10px;
-} */
-
 
 
 /* FOOTER */
@@ -616,9 +520,6 @@ footer{
     max-height: 5vw;
     width: auto;
 }
-
-
-
 
 
 /* MODALS */
