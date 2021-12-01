@@ -260,6 +260,8 @@
                     </div>
                 </div>
 
+                <!-- ! ajouter certification TOSA ? -->
+
                 <div class="box-outils">
                     <h5 class="titre-graphique">Web Développement</h5>
                     <div class="positionRel box-graphique">
@@ -333,7 +335,9 @@
                         <div class="liste-outils container colonne">
                             <div class="ligne-outil container taille100">
                                 <img class="img-graphique" src="./assets/images/icones/googleDrive.png" alt="Google Drive">
-                                <span>Google Drive</span>
+                                <div>
+                                    <span>Google Drive</span>
+                                </div>
                                 <div class="barre-graphique">
                                     <div class="bloc-graphique-plein taille90">
                                         <div class="bloc-graphique-vide"></div>
@@ -382,14 +386,30 @@
             <!-- ! FILTRES ? -->
             <div>
                 <div class="container justifyAround">
-                    <div class="projetPorfolio" data-toggle="modal" data-target="#portfolioModal1">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <img src="./assets/images/icones/plus-gris.png" alt="Plus">
-                            </div>
+                    <!-- Portfolio Item 1-->
+                    <!-- <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <button class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </button>
+                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="" />
                         </div>
-                        <img class="imagePortfolio" src="./assets/images/projet portfolio/pacman.png" alt="Projet Pacman">
+                    </div> -->
+
+                    <div class="projetPorfolio">
+                        <div class="portfolio-item" data-toggle="modal" data-target="#portfolioModal1">
+                            <button class="portfolio-hover" id="portfolioModal1">
+                                <div class="portfolio-hover-contenu">
+                                    <img class="logo-plus" src="./assets/images/icones/plus-brun.png" alt="signe plus">                        
+                                    <h4 class="sous">Pacman</h4>
+                                </div>
+                            </button>
+                            <img class="imagePortfolio" src="./assets/images/projet portfolio/pacman.png" alt="Projet Pacman">
+                        </div>
                     </div>
+
                     <div class="projetPorfolio">
                         <img class="imagePortfolio" src="./assets/images/projet portfolio/CapCreations.png" alt="Projet Cap Créations">
                     </div>
