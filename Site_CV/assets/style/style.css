@@ -113,7 +113,7 @@ button{
 /* Séparations */
 .separationBlanc{
 width: 100%;
-height: 20vh;
+height: 10vw;
 }
 .separation-ligne{
     width: 90%;
@@ -449,27 +449,28 @@ width: 100%;
 
 /* SKILLS */
 .titre-graphique{
-    margin-left: -150px;
     font-family: var(--font_sousTitre);
+    text-align: end;
 }
 .skills-outils{
     width: 95vw;
-    margin: auto;
-    background-color: blue;
+    margin-left:-100px;
+    /* background-color: blue; */
 }
 .box-outils{
     width: 400px;
     margin-left: auto;
     margin-right: auto;
+    /* border: solid rgb(150, 148, 148) 5px; */
 }
 .box-graphique{
     margin-top: 10px;
     height: 300px;
 }
 .liste-outils{
-    justify-content: space-around;
+    justify-content: space-between;
     position: absolute;
-    left: -210px;
+    left: -74px;
     height: 270px;
     width: 500px;
 }
@@ -488,14 +489,16 @@ width: 100%;
 }
 .ligne-graphique-vertical{
     position: absolute;
-    height: 270px;
+    right: 260px;
+    height: 275px;
     width: 3px;
     background-color: var(--gris_color);
     border-radius: 50%;
 }
 .ligne-graphique-horizontal{
     position: absolute;
-    bottom: 25px;
+    right: -10px;
+    bottom: 20px;
     height: 3px;
     width: 270px;
     background-color: var(--gris_color);
@@ -520,6 +523,43 @@ width: 100%;
     width: calc(250px / 100 * 90);
 }
 
+/* Responsive SKILLS */
+@media screen and (max-width: 1000px) {
+    .skills-outils{
+    /* width: 95vw; */
+    margin-left:0;
+    /* background-color: blue; */
+    }
+
+    .barre-graphique .taille30{
+        width: 30%;
+    }
+    .barre-graphique .taille40{
+        width: 40%;
+    }
+    .barre-graphique .taille50{
+        width: 50%;
+    }
+    .barre-graphique .taille65{
+        width: 65%;
+    }
+    .barre-graphique .taille80{
+        width: 80%;
+    }
+    .barre-graphique .taille90{
+        width: 90%;
+    }
+    .barre-graphique .taille95{
+        width: 95%;
+    }
+    .barre-graphique .taille100{
+        width: 100%;
+    }
+
+    h5 .titre-graphique{
+        font-size: ;
+    }
+}
 
 /* PORTFOLIO */
 
@@ -555,6 +595,33 @@ width: 100%;
     opacity: 1;
 }
 .portfolio-hover-contenu{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+.titre-projet{
+    width: 100%;
+    font-size: 2vw;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.langages-container-mini{
+    top: 4.5rem;
+    width: 100%;
+}
+.langageProgra-miniature{
+    border: solid 1px var(--gris_color);
+    color: var(--gris_color); 
+    padding: 10px;
+    width: 30%;
+    background-color: var(--beige_color);
+}
+.logo-plus-miniature{
+    width: 3vw;
+    height: auto;
+    margin-top: 2.5vw;
+    margin-bottom: 0.5vw;
 }
 
 
@@ -677,9 +744,28 @@ footer{
         width: 100%;
     }
 
+    /* Responsive Titres */
+    /* h2{
+        font-size: 4.5vw;
+        font-weight: lighter;
+        margin-bottom: 2vw;
+    }
+    h3{
+        font-size: 4vw;
+        font-weight: lighter;
+    }
+    h4{
+        font-size: 3vw;
+        font-weight: lighter;
+    }
+    h5{
+        font-size: 3vw;
+        font-weight: lighter;
+    } */
+
     .recherche{
         font-size: 12px;
     }
 
-    /* ! Faire responsive Graphiques !!! */
+    /* ! Faire responsive Graphiques apd 500 et moins !!! */
     }
