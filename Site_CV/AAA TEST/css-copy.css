@@ -449,16 +449,15 @@ width: 100%;
 
 /* SKILLS */
 .titre-graphique{
-    margin-left: -150px;
+    margin-left: 150px;
     font-family: var(--font_sousTitre);
 }
 .skills-outils{
-    width: 95vw;
-    margin: auto;
-    background-color: blue;
+    width: 100vw;
+    margin-left: -190px;
 }
 .box-outils{
-    width: 400px;
+    width: 33%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -469,7 +468,7 @@ width: 100%;
 .liste-outils{
     justify-content: space-around;
     position: absolute;
-    left: -210px;
+    left: 0;
     height: 270px;
     width: 500px;
 }
@@ -488,6 +487,7 @@ width: 100%;
 }
 .ligne-graphique-vertical{
     position: absolute;
+    right: 270px;
     height: 270px;
     width: 3px;
     background-color: var(--gris_color);
@@ -496,6 +496,7 @@ width: 100%;
 .ligne-graphique-horizontal{
     position: absolute;
     bottom: 25px;
+    right: 0px;
     height: 3px;
     width: 270px;
     background-color: var(--gris_color);
@@ -585,9 +586,9 @@ footer{
         z-index: 20; /* Sit on top */
         left: 0;
         top: 0;
-        width: 100%; 
+        width: 100vw; 
         height: 100%; 
-        overflow: auto; /* Enable scroll if needed */
+        overflow: visible; /* Enable scroll if needed */
         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     }
     /* Modal Content/Box */
