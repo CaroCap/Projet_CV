@@ -35,24 +35,11 @@ let choixModals = document.getElementsByClassName('modalClic');
 for (let indexModal = 0; indexModal < choixModals.length; indexModal++) {
     choixModals[indexModal].addEventListener("click", ouvrirModal);
 }
-// function openModal(event) {
-//     event.preventDefault();
-//     let modalID = this.id;
-//     for (let index = 0; index < choixModals.length; index++) {
-//         if(document.getElementById('codeJoueur').value.length<8){
-//             if(modalPicked == choixModals[index]){
-//                 document.getElementById('codeJoueur').value += (choixModals[index]);
-//             }
-//         }      
-//     }
-// }
 
 // Get the modal
 let modal;
 let modalID = "";
-// ! Récupérer le nom de l'id du click pour pouvoir le mettre dans le modal et ouvrir le bon modal
-// Get the button that opens the modal
-// var btn = document.getElementById("decouvrirPlus");
+
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 // When the user clicks on the button, open the modal
@@ -60,10 +47,9 @@ var span = document.getElementsByClassName("close")[0];
 
 function ouvrirModal(event){
     event.preventDefault();
+    // Récupérer le nom de l'id du click pour pouvoir le mettre dans le modal et ouvrir le bon modal
     modalID = "modal"+this.id;
-console.log("ID Modal", modalID); // ! A SUPPRIMER
     modal = document.getElementById(modalID);
-console.log("Modal", modal); // ! A SUPPRIMER
     modal.style.display = "block";
 }
 // When the user clicks on <span> (x), close the modal
