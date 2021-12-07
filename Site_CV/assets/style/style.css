@@ -226,6 +226,22 @@ h5{
 .hidden{
     display: none;
 }
+.filtres{
+    justify-content: center;
+}
+.filtre-langage{
+    border: var(--gris_color) solid 1px;
+    /* border-radius: 15px; */
+    padding: 10px;
+    min-width: 91px;
+    /* margin-right: 5px;
+    margin-left: 5px; */
+    margin-bottom: 10px;
+}
+
+.filtre-langage:focus{
+    background-color: var(--beige_color);
+}
 
 
 /* NAVIGATION */
@@ -465,6 +481,7 @@ width: 100%;
 .titre-graphique{
     font-family: var(--font_sousTitre);
     text-align: end;
+    font-size: 31px;
 }
 .skills-outils{
     width: 95vw;
@@ -524,8 +541,9 @@ width: 100%;
     border: solid var(--gris_color) 3px;
 }
 .bloc-graphique-plein{
-    height : 32px;
+    height : 34px;
     background-color: var(--beige_color);
+    
 }
 .barre-graphique{
     width: 250px;

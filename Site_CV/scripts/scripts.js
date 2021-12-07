@@ -66,7 +66,7 @@ for (let indexFiltre = 0; indexFiltre < choixFiltres.length; indexFiltre++) {
 
 
 function filtreLanguage(e) {
-    const languages = document.querySelectorAll(".list-langugages div"); //sélectionner toutes les div de la liste
+    const languages = document.querySelectorAll(".projetPorfolio"); //sélectionner toutes les class projetPorfolio
     let filtre = e.target.dataset.filter;
     if (filtre === '*') {
         languages.forEach(language => language.classList.remove('hidden'));
