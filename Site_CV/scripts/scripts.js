@@ -11,24 +11,6 @@ document.getElementById("ageCaroModal").innerHTML = getAge(BIRTHDATE_CARO) + " a
 
 
 // MODALS
-//CHOIX COULEURS JOUEUR
-choixCouleur = document.getElementsByClassName('couleur');
-for (let indexCouleur = 0; indexCouleur < choixCouleur.length; indexCouleur++) {
-    choixCouleur[indexCouleur].addEventListener("click", pickColor);
-}
-function pickColor(event){
-    event.preventDefault();
-    let colorPicked = event.currentTarget.innerText;
-    for (let index = 0; index < liste_couleurs.length; index++) {
-        if(document.getElementById('codeJoueur').value.length<8){
-            if(colorPicked == liste_couleurs[index]){
-                document.getElementById('codeJoueur').value += (liste_couleurs[index]);
-            }
-        }      
-    }
-    //replacer le curseur dans le input pour l'entrée suivante
-    document.getElementById("codeJoueur").focus();
-}
 
 //TABLEAU DES MODALS
 let choixModals = document.getElementsByClassName('modalClic');
@@ -53,6 +35,7 @@ function ouvrirModal(event){
     modal.style.display = "block";
 }
 // When the user clicks on <span> (x), close the modal
+// ! prob avec le nombre du [] close
 span.onclick = function() {
     modal.style.display = "none";
 }
@@ -72,3 +55,27 @@ window.onclick = function(event) {
 
 //     TL1.play();
 // }
+
+
+// FILTRES
+
+let choixFiltres = document.getElementsByClassName('filtre-langage');
+for (let indexFiltre = 0; indexFiltre < choixFiltres.length; indexFiltre++) {
+    choixFiltres[indexFiltre].addEventListener("click", filtreLanguage);
+}
+
+
+function filtreLanguage(e) {
+    const languages = document.querySelectorAll(".list-langugages div"); //sélectionner toutes les div de la liste
+    let filtre = e.target.dataset.filter;
+    if (filtre === '*') {
+        languages.forEach(language => language.classList.remove('hidden'));
+    }
+    else {
+            languages.forEach(language => {
+            language.classList.contains(filtre) // Est-ce que le langugage se trouve dans la classe de la div
+            ? language.classList.remove('hidden') // si oui => enlever class hidden
+            : language.classList.add('hidden') // si non => ajouter class hidden
+        });
+    };
+};

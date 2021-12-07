@@ -75,7 +75,7 @@
                         <a class="container colonne" href="#portfolioSection">
                             <img class="logo-header" src="./assets/images/icones/icone-portfolio-brun.png" alt="Icone Portfolio">Voir le Portfolio
                         </a>
-                        <a class="container colonne" href="./assets/images/Caroline_CAP_CV.pdf" target="_blank">
+                        <a class="container colonne" href="./assets/docPDF/Caroline_CAP_CV.pdf" target="_blank">
                             <img class="logo-header" src="./assets/images/icones/CV-brun.png" alt="CV Download">CV Download
                         </a>
                     </div>
@@ -385,11 +385,21 @@
             <div class="separationBlanc"> </div>
             <h2 class="font-titre">Portfolio</h2>
             
-            <!-- ! FILTRES ? -->
+            <!-- ! FILTRES => Faire le CSS --> 
+            <div class="filtres">
+                <button class="filtre-langage" data-filter="*">Tous</button>
+                <button class="filtre-langage" data-filter="php-language">PHP</button>
+                <button class="filtre-langage" data-filter="javascript-language">JavaScript</button>
+                <button class="filtre-langage" data-filter="cSharp-language">C#</button>
+                <button class="filtre-langage" data-filter="python-language">Python</button>
+                <button class="filtre-langage" data-filter="java-language">Java</button>
+            </div>
+
+
             <div>
-                <div class="container justifyCenter">
+                <div class="container justifyCenter list-langugages">
                     <!-- Portfolio 1 -->
-                    <div class="projetPorfolio">
+                    <div class="projetPorfolio java-language">
                         <div class="portfolio-item" data-toggle="modal" data-target="#portfolioModal1">
                             <button class="portfolio-hover modalClic" id="Portfolio1">
                                 <div class="portfolio-hover-contenu">
@@ -412,7 +422,7 @@
                     </div>
 
                     <!-- Portfolio 2 -->
-                    <div class="projetPorfolio">
+                    <div class="projetPorfolio php-language">
                         <div class="portfolio-item" data-toggle="modal" data-target="#portfolioModal2">
                             <button class="portfolio-hover modalClic" id="Portfolio2">
                                 <div class="portfolio-hover-contenu">
@@ -434,7 +444,7 @@
                     </div>
 
                     <!-- Portfolio 3 -->
-                    <div class="projetPorfolio">
+                    <div class="projetPorfolio javascript-language">
                         <div class="portfolio-item" data-toggle="modal" data-target="#portfolioModal3">
                             <button class="portfolio-hover modalClic" id="Portfolio3">
                                 <div class="portfolio-hover-contenu">
@@ -456,7 +466,7 @@
                     </div>
 
                     <!-- Portfolio 4 -->
-                    <div class="projetPorfolio">
+                    <div class="projetPorfolio python-language">
                         <div class="portfolio-item" data-toggle="modal" data-target="#portfolioModal4">
                             <button class="portfolio-hover modalClic" id="Portfolio4">
                                 <div class="portfolio-hover-contenu">
@@ -478,7 +488,7 @@
                     </div>
 
                     <!-- Portfolio 5 -->
-                    <div class="projetPorfolio">
+                    <div class="projetPorfolio python-language">
                         <div class="portfolio-item" data-toggle="modal" data-target="#portfolioModal5">
                             <button class="portfolio-hover modalClic" id="Portfolio5">
                                 <div class="portfolio-hover-contenu">
@@ -500,7 +510,7 @@
                     </div>
 
                     <!-- Portfolio 6 -->
-                    <div class="projetPorfolio">
+                    <div class="projetPorfolio php-language">
                         <div class="portfolio-item" data-toggle="modal" data-target="#portfolioModal6">
                             <button class="portfolio-hover modalClic" id="Portfolio6">
                                 <div class="portfolio-hover-contenu">
@@ -522,7 +532,7 @@
                     </div>
 
                     <!-- Portfolio 7 : PENDU C#-->
-                    <div class="projetPorfolio">
+                    <div class="projetPorfolio cSharp-language">
                         <div class="portfolio-item" data-toggle="modal" data-target="#portfolioModal7">
                             <button class="portfolio-hover modalClic" id="Portfolio7">
                                 <div class="portfolio-hover-contenu">
@@ -606,7 +616,7 @@
                     <a class="container colonne" href="#portfolioSection">
                         <img class="logo-header" src="./assets/images/icones/icone-portfolio-brun.png" alt="Icone Email">Voir le Portfolio
                     </a>
-                    <a class="container colonne" href="./assets/images/Caroline_CAP_CV.pdf" target="_blank">
+                    <a class="container colonne" href="./assets/docPDF/Caroline_CAP_CV.pdf" target="_blank">
                         <img class="logo-header" src="./assets/images/icones/CV-brun.png" alt="CV Download">CV Download
                     </a>
                 </div>

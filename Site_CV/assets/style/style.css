@@ -221,6 +221,13 @@ h5{
 .haut100{
     height: 100%;
 }
+
+/* Filtres */
+.hidden{
+    display: none;
+}
+
+
 /* NAVIGATION */
 .barre-navigation{
     background-color: var(--brun_color);
