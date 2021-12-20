@@ -478,6 +478,9 @@ width: 100%;
     }
 
 /* SKILLS */
+#skillsSection{
+    height: 100vh;
+}
 .titre-graphique{
     font-family: var(--font_sousTitre);
     text-align: end;

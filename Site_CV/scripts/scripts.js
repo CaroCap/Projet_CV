@@ -12,7 +12,7 @@ document.getElementById("ageCaroModal").innerHTML = getAge(BIRTHDATE_CARO) + " a
 
 // MODALS
 
-//TABLEAU DES MODALS
+//Tableau des Modals
 let choixModals = document.getElementsByClassName('modalClic');
 for (let indexModal = 0; indexModal < choixModals.length; indexModal++) {
     choixModals[indexModal].addEventListener("click", ouvrirModal);
@@ -22,11 +22,6 @@ for (let indexModal = 0; indexModal < choixModals.length; indexModal++) {
 let modal;
 let modalID = "";
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-// When the user clicks on the button, open the modal
-// btn.addEventListener("click", ouvrirModal);
-
 function ouvrirModal(event){
     event.preventDefault();
     // Récupérer le nom de l'id du click pour pouvoir le mettre dans le modal et ouvrir le bon modal
@@ -34,11 +29,34 @@ function ouvrirModal(event){
     modal = document.getElementById(modalID);
     modal.style.display = "block";
 }
+
+// Bouton fermer
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+let croixModals = document.getElementsByClassName('close');
+for (let indexModal = 0; indexModal < croixModals.length; indexModal++) {
+    croixModals[indexModal].addEventListener("click", fermerModal);
+}
 // When the user clicks on <span> (x), close the modal
 // ! prob avec le nombre du [] close
+function fermerModal(event){
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
 span.onclick = function() {
+    modalID = "modal"+this.id;
+    modal = document.getElementById(modalID);
     modal.style.display = "none";
 }
+span.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
@@ -58,12 +76,10 @@ window.onclick = function(event) {
 
 
 // FILTRES
-
 let choixFiltres = document.getElementsByClassName('filtre-langage');
 for (let indexFiltre = 0; indexFiltre < choixFiltres.length; indexFiltre++) {
     choixFiltres[indexFiltre].addEventListener("click", filtreLanguage);
 }
-
 
 function filtreLanguage(e) {
     const languages = document.querySelectorAll(".projetPorfolio"); //sélectionner toutes les class projetPorfolio
