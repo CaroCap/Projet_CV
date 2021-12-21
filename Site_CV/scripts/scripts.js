@@ -31,30 +31,14 @@ function ouvrirModal(event){
 }
 
 // Bouton fermer
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
+// When the user clicks on (x), close the modal
+// Ajouter événement sur croix avec classe close
 let croixModals = document.getElementsByClassName('close');
 for (let indexModal = 0; indexModal < croixModals.length; indexModal++) {
     croixModals[indexModal].addEventListener("click", fermerModal);
 }
-// When the user clicks on <span> (x), close the modal
-// ! prob avec le nombre du [] close
 function fermerModal(event){
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-span.onclick = function() {
-    modalID = "modal"+this.id;
-    modal = document.getElementById(modalID);
     modal.style.display = "none";
-}
-span.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
 }
 
 // When the user clicks anywhere outside of the modal, close it
