@@ -67,7 +67,7 @@
                     </div>
                     <!-- Photo Profil -->
                     <div class="photoProfil">
-                        <img class="photo" src="./assets/images/photo-ronde.png" alt="Photo Caro">
+                        <img class="photo modalClic" id="DecouvrirPlus" src="./assets/images/photo-ronde.png" alt="Photo Caro">
                     </div>
                     
                     <!-- logo CV Portfolio -->
@@ -83,7 +83,7 @@
 
                 <!-- Infos -->
                 <div class="infosContact">
-                    <div class="infoContact taille30 container colonne">
+                    <div class="infoContact taille35 container colonne">
                         <div class="info"><span class="bold upper">Age</span> <span id="ageCaro">ans</span></div>
                         <div class="info"><span class="bold upper">Localisation</span> <span>Forest</span></div>
                         <div class="info"><span class="bold upper">Permis</span> <span>Permis B</span></div>
@@ -94,8 +94,8 @@
                     <span>Je recherche actuellement un stage en tant que <b>Web Développeuse</b>.</span>
                     <div>
                         <button class="modalClic" id="DecouvrirPlus">
-                            <img class="logo-plus"  src="./assets/images/icones/plus-brun.png" alt="signe plus">                        
                             <h4>Découvrir plus...</h4>
+                            <img class="logo-plus"  src="./assets/images/icones/plus-brun.png" alt="signe plus">                        
                         </button>
                     </div>
                 </div>
@@ -580,7 +580,6 @@
 <!-- MODALS -->
 
     <!-- Découvrir Plus -->
-    <!-- ! Revoir la mise en page du Modal !!! -->
 <div id="modalDecouvrirPlus" class="modal">
     <!-- contenu -->
     <div class="modal-content">
@@ -655,29 +654,37 @@
             <!-- HOBBYS Modal -->
             <div class="hobbys container">
                 <h2 class="taille50 font-titre">Hobbys</h2>
-                <div class="info titreInfo">
-                    <span class="center font-titre upper souligne">Musique-Théâtre</span>
-                </div>
-                <div><span>Piano depuis 1994
-                    Stage de Théâtre, Cours scolaire et cours parascolaire depuis 2000.</span></div>
+                <div class="container alignItemsStart justifyAround">
+                    <div class="hobby container taille40">
+                        <div class="info titreInfo">
+                            <span class="center font-titre upper souligne">Musique-Théâtre</span>
+                        </div>
+                        <div><span>Piano depuis 1994
+                            Stage de Théâtre, Cours scolaire et cours parascolaire depuis 2000.</span></div>
+                    </div>
 
-                <div class="info titreInfo"><span class="center font-titre upper souligne">Voyages</span></div>
-                <div><span>Nouvelle Calédonie, Europe, Australie, Nouvelle Zélande, Canada, Californie</span></div>
+                    <div class="hobby container taille40">
+                        <div class="info titreInfo"><span class="center font-titre upper souligne">Voyages</span></div>
+                        <div><span>Nouvelle Calédonie, Europe, Australie, Nouvelle Zélande, Canada, Californie</span></div>
+                    </div>
 
-                <div class="info titreInfo"><span class="center font-titre upper souligne">Sport</span></div>
-                <div><span>Actuellement du Kin Ball depuis 2005
-                    Mais aussi dans mon passé… 
-                    Basket, tennis, volley, frisbee ultimate, plongée, escalade, danse, équitation.</span></div>
-
-                <!-- ! VIDEO KB -->
-                <div class="video">
-                    <iframe
-                    src="https://www.youtube.com/embed/J-9isnYyOjY"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    ></iframe>
+                    <div class="hobby container taille40 justifyCenter">
+                        <div class="info titreInfo"><span class="center font-titre upper souligne">Sport</span></div>
+                        <div><span>Actuellement du Kin Ball depuis 2005
+                            Mais aussi dans mon passé… 
+                            Basket, tennis, volley, frisbee ultimate, plongée, escalade, danse, équitation.</span></div>
+                        <!-- ! VIDEO KB -->
+                        <div class="videoKB">
+                            <iframe
+                            src="https://www.youtube.com/embed/J-9isnYyOjY"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            ></iframe>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -1009,7 +1016,7 @@
 
                 <div>
                     <!-- VIDEO -->
-                    <video class="video" src="./assets/videos/CSharps-Pendu2.mp4" autoplay controls loop muted poster="./assets/images/projet portfolio/pendu-CSharp.png">
+                    <video class="video" src="./assets/videos/CSharp-Pendu.mp4" autoplay controls loop muted poster="./assets/images/projet portfolio/pendu-CSharp.png">
                         Your browser does not support the video tag.
                     </video>
                 </div>

@@ -189,6 +189,9 @@ h5{
 .taille30{
     width: 30%;
 }
+.taille35{
+    width: 35%;
+}
 .taille40{
     width: 40%;
 }
@@ -315,6 +318,7 @@ h5{
     border: var(--brun_color) solid 2vw;
     border-radius: 50%;
     width: 70%;
+    min-width: 285px;
     height: auto;
     box-shadow: -5px 12px 18px -2px #888888;
 }
@@ -322,16 +326,19 @@ h5{
     width: 25%;
 }
 .infosContact{
-width: 100%;
+    margin-top: 1.5vw;
+    /* margin-bottom: 2.5vw; */
+    width: 100%;
 }
 .infoContact{
-    border: var(--brun_color) solid 2vw;
+    border: var(--brun_color) solid 1.5vw;
     padding: 1.5vw;
     background-color: var(--beige_color);
     box-shadow: -5px 12px 18px -2px #888888;
     margin: auto;
 }
 .info{
+    font-size: 1.2vw;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -343,15 +350,19 @@ width: 100%;
 .bold{
     font-weight: bold;
 }
+#DecouvrirPlus{
+    margin-top: 3.5vw;
+}
 .logo-plus{
     width: 3vw;
     height: auto;
-    margin-top: 2.5vw;
+    margin-top: 1.5vw;
     margin-bottom: 0.5vw;
 }
 .recherche{
     width: 100%;
     margin-top: 7vh;
+    margin-bottom: 1.5vw;
     /*text-align: center;*/
     font-size: 1.5vw;
 }
@@ -479,7 +490,7 @@ width: 100%;
 
 /* SKILLS */
 #skillsSection{
-    height: 100vh;
+    min-height: 100vh;
 }
 .titre-graphique{
     font-family: var(--font_sousTitre);
@@ -591,9 +602,9 @@ width: 100%;
         width: 100%;
     }
 
-    h5 .titre-graphique{
+    /* h5 .titre-graphique{
         font-size: ;
-    }
+    } */
 }
 
 /* PORTFOLIO */
@@ -721,8 +732,9 @@ footer{
     .close {
         color: var(--gris_color);
         float: right;
-        font-size: 28px;
+        font-size: 4vw;
         font-weight: bold;
+        margin-right: 1.5vw;
     }
     
     .close:hover,
@@ -732,19 +744,39 @@ footer{
         cursor: pointer;
     }
 
+    #modalDecouvrirPlus .modal-content header .container{
+        margin-top: 5vw;
+    }
+
+    .hobbys {
+        margin-top: 4.5vw;
+    }
+
+    .hobby{
+        text-align: justify;
+        margin: 2vw;
+        font-size: 1.2vw;
+    }
+
+    .hobby .font-titre{
+        font-size: 1.6vw;
+    }
+
     /* Vidéo */
     .video{
-        margin: 80px auto 80px auto;
+        margin: 20px auto 80px auto;
         width: auto;
         max-width: 80%;
         background-color: transparent;
         text-align: center;
     }
-    .video iframe{
+    .videoKB iframe{
+        margin: 20px auto 80px auto;
+
         border: none;
         border-radius: 10px;
-        width: 100%;
-        height: 200px;
+        width:500px;
+        height: 300px;
     }
 
     .barreBruneGauche{
@@ -816,6 +848,10 @@ footer{
 
     .recherche{
         font-size: 12px;
+    }
+
+    .photo{
+        min-width: 100px;
     }
 
     /* ! Faire responsive Graphiques apd 500 et moins !!! */
