@@ -744,6 +744,21 @@ footer{
         cursor: pointer;
     }
 
+    /* Flèches Modal précédent/Next */
+    #previousArrow{
+        position: absolute;
+        left: 25px;
+        top: 50%;
+    }
+    #nextArrow{
+        position: absolute;
+        right: 25px;
+        top: 50%;
+    }
+    #previousArrow:hover, #nextArrow:hover{
+        cursor: pointer;
+    }
+
     #modalDecouvrirPlus .modal-content header .container{
         margin-top: 5vw;
     }
