@@ -548,9 +548,55 @@
                                     </div>
                                 </div>
                             </button>
-                            <img class="imagePortfolio" src="./assets/images/projet portfolio/pendu-CSharp.png" alt="Projet tirage au sort">
+                            <img class="imagePortfolio" src="./assets/images/projet portfolio/pendu-CSharp.png" alt="Jeu du pendu">
                         </div>
                     </div>
+
+                    <!-- Portfolio 8 : TAROT-->
+                    <div class="projetPorfolio javascript-language">
+                        <div class="portfolio-item" data-toggle="modal" data-target="#portfolioModal8">
+                            <button class="portfolio-hover modalClic" id="Portfolio8">
+                                <div class="portfolio-hover-contenu">
+                                    <h4 class="titre-projet">Tirage du Tarot</h4>
+                                    <div class="container langages-container-mini">
+                                        <h6 class="langageProgra-miniature">JavaScript</h6>
+                                    </div>
+                                    <div class="justifie corps-projet-mini">
+                                        <span>Tirage aléatoire d'un jeu de Tarot.</span>
+                                    </div>
+                                    <div class="see-more-mini container">
+                                        <img class="logo-plus-miniature" src="./assets/images/icones/plus-brun.png" alt="signe plus">                        
+                                        <span class="upper">See More</span>
+                                    </div>
+                                </div>
+                            </button>
+                            <img class="imagePortfolio" src="./assets/images/projet portfolio/Tarot.png" alt="Jeu du Tarot">
+                        </div>
+                    </div>
+
+                    <!-- Portfolio 9 : HACKATHON - COFFEE WARS-->
+                    <div class="projetPorfolio javascript-language php-language">
+                        <div class="portfolio-item" data-toggle="modal" data-target="#portfolioModal9">
+                            <button class="portfolio-hover modalClic" id="Portfolio9">
+                                <div class="portfolio-hover-contenu">
+                                    <h4 class="titre-projet">Hackathon Coffee Wars</h4>
+                                    <div class="container langages-container-mini">
+                                        <h6 class="langageProgra-miniature">JavaScript</h6>
+                                        <h6 class="langageProgra-miniature">PHP</h6>
+                                    </div>
+                                    <div class="justifie corps-projet-mini">
+                                        <span>Hackathon de 3 jours pour réaliser un projet de groupe.</span>
+                                    </div>
+                                    <div class="see-more-mini container">
+                                        <img class="logo-plus-miniature" src="./assets/images/icones/plus-brun.png" alt="signe plus">                        
+                                        <span class="upper">See More</span>
+                                    </div>
+                                </div>
+                            </button>
+                            <img class="imagePortfolio" src="./assets/images/projet portfolio/CoffeeWars.png" alt="Jeu Coffee Wars">
+                        </div>
+                    </div>
+
                 </div>
             </div> 
         </section>
@@ -611,8 +657,8 @@
                 
                 <!-- logo CV Portfolio -->
                 <div class="container colonne taille25">
-                    <a class="container colonne" href="#portfolioSection">
-                        <img class="logo-header" src="./assets/images/icones/icone-portfolio-brun.png" alt="Icone Email">Voir le Portfolio
+                    <a class="container colonne" href="#portfolioSection" id="iconePortfolioModal">
+                        <img class="logo-header" src="./assets/images/icones/icone-portfolio-brun.png" alt="Icone Portfolio">Voir le Portfolio
                     </a>
                     <a class="container colonne" href="./assets/docPDF/Caroline_CAP_CV.pdf" target="_blank">
                         <img class="logo-header" src="./assets/images/icones/CV-brun.png" alt="CV Download">Download
@@ -1025,6 +1071,107 @@
     </div>
 </div>
 
+<!-- Modal Portfolio 8 -->
+<div id="modalPortfolio8" class="modal">
+    <!-- contenu -->
+    <div class="modal-content positionRel">
+        <span class="close">&times;</span>
+        <!-- barre brune côté -->
+        <div class="barreBruneGauche">
+            <div class="container colonne haut100 center">
+                <div class="container colonne">
+                    <div class="langageProgra">
+                        JavaScript
+                    </div>
+                </div>
+                <div class="container colonne justifyAround haut70">
+                    <div>
+                        <a href="https://github.com/CaroCap?tab=repositories" target="_blank">
+                            <img class="taille65" src="./assets/images/icones/icone-github-beige.png" alt="Icone Github"></a>
+                            <div class="beige-color">Voir le code</div>
+                    </div>
+                    <!-- ! A SUPPRIMER ou mettre en ligne -->
+                    <!-- <div>
+                        <a href="" target="_blank">
+                            <img class="taille65" src="./assets/images/icones/internet-beige.png" alt="Icone Site Web"></a>
+                            <div class="beige-color">Voir le Site</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab30">
+            <div>
+                <h2 class="taille50 font-titre">Le Tarot</h2>
+                <div class="justifie">
+                    <span>Exercice de groupe pour s'entraîner à travailler en équipe dans un projet GitHub.
+                        <br>Laure, Julie et moi-même avons travaillé sur un tirage aléatoire du Tarot.
+                    </span>
+                </div>
+
+                <div>
+                    <!-- VIDEO -->
+                    <video class="video" src="./assets/videos/Tarot.mp4" autoplay controls loop muted poster="./assets/images/projet portfolio/Tarot.png">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Portfolio 9 -->
+<div id="modalPortfolio9" class="modal">
+    <!-- contenu -->
+    <div class="modal-content positionRel">
+        <span class="close">&times;</span>
+        <!-- barre brune côté -->
+        <div class="barreBruneGauche">
+            <div class="container colonne haut100 center">
+                <div class="container colonne">
+                    <div class="langageProgra">
+                        JavaScript
+                    </div>
+                    <div class="langageProgra">
+                        PHP
+                    </div>
+                </div>
+                <div class="container colonne justifyAround haut70">
+                    <div>
+                        <a href="https://github.com/CaroCap?tab=repositories" target="_blank">
+                            <img class="taille65" src="./assets/images/icones/icone-github-beige.png" alt="Icone Github"></a>
+                            <div class="beige-color">Voir le code</div>
+                    </div>
+                    <!-- ! A SUPPRIMER ou mettre en ligne -->
+                    <!-- <div>
+                        <a href="" target="_blank">
+                            <img class="taille65" src="./assets/images/icones/internet-beige.png" alt="Icone Site Web"></a>
+                            <div class="beige-color">Voir le Site</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab30">
+            <div>
+                <h2 class="taille50 font-titre">Hackathon - Coffee Wars</h2>
+                <div class="justifie">
+                    <span>Hackathon de 3 jours organisé mélangeant les stagiaires d'Interface3 de WEB (front-end), WAD (back-end) et GAMES.
+                        <br>Notre groupe a décidé de créer un jeu de question pour gagner des grains de café pour pouvoir se faire un bon café à la fin du chrono.
+                        <br>Base en HTML et CSS avec le déroulement du jeu écrit en JavaScript et la gestion des données en PHP.
+                    </span>
+                </div>
+
+                <div>
+                    <!-- VIDEO -->
+                    <video class="video" src="./assets/videos/Hackathon-CoffeeWars3.mp4" autoplay controls loop muted poster="./assets/images/projet portfolio/CoffeeWars.png">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="./scripts/scripts.js"></script>
 </body>

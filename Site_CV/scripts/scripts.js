@@ -1,5 +1,6 @@
 // AGE
-const BIRTHDATE_CARO = new Date(1990,01,16)
+const BIRTHDATE_CARO = new Date(1990,0,16)
+//Mois 0 car index 0 pour janvier et index 11 pour décembre
 
 function getAge(birthdate){
     var diff = Date.now()-birthdate.getTime();
@@ -9,9 +10,7 @@ function getAge(birthdate){
 document.getElementById("ageCaro").innerHTML = getAge(BIRTHDATE_CARO) + " ans";
 document.getElementById("ageCaroModal").innerHTML = getAge(BIRTHDATE_CARO) + " ans";
 
-
 // MODALS
-
 //Tableau des Modals
 let choixModals = document.getElementsByClassName('modalClic');
 for (let indexModal = 0; indexModal < choixModals.length; indexModal++) {
@@ -47,6 +46,12 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+// Si clic sur Portfolio du Modal
+document.getElementById("iconePortfolioModal").addEventListener("click", function(event) {
+    document.getElementById("modalDecouvrirPlus").style.display = "none";
+})
+
 
 // // EFFETS TITRE
 // const allItems = document.querySelectorAll('li');
