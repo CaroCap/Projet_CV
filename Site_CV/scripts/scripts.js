@@ -133,3 +133,25 @@ function switchModal(event) {
     modal = document.getElementById(idModalSwitched)
     modal.style.display = "block";
 }
+
+
+// COLLAPSE TIMELINE
+var acc = document.getElementsByClassName('accordion');
+var i;
+var len = acc.length;
+for (i = 0; i < len; i++) {
+  acc[i].addEventListener('click', function(){
+    this.classList.toggle('active');
+    var panel = this.nextElementSibling;
+    var box = this.parentElement;
+    // var box = $(this).parent();
+    if(panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else{
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+      box.classList.add("indexTop");
+    }
+
+  });
+  
+}

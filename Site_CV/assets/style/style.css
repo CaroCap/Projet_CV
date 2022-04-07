@@ -225,6 +225,10 @@ h5{
     height: 100%;
 }
 
+.indexTop{
+    z-index: 15;
+}
+
 /* Filtres */
 .hidden{
     display: none;
@@ -241,7 +245,6 @@ h5{
     margin-left: 5px; */
     margin-bottom: 10px;
 }
-
 .filtre-langage:focus{
     background-color: var(--beige_color);
 }
@@ -409,7 +412,7 @@ h5{
 
 .box{
     width: 400px;
-    min-height: 200px;
+    min-height: 120px;
     padding: 20px;
     border-radius: 3px;
     /* s'ajuste si + de contenu */
@@ -480,12 +483,47 @@ h5{
             width: 60px;
             height: 60px;
             font-size: 30px;
-
         }
         .box{
             left: calc(50% + 2vw);
             width: 350px;
         }
+
+        /* COLLAPSE TIMELINE */
+        /* https://www.youtube.com/watch?v=p8sN0VRWz74 */
+        /* https://www.w3schools.com/howto/howto_js_collapsible.asp */
+        .accordion{
+            width: 100%;
+            cursor: pointer;
+        }
+        .iconBox{
+            margin: 0 -10px;
+            width: 30px;
+            height: 30px;
+            background: url("/assets/images/icones/plus48px.png") no-repeat -8px -9px;
+            border-radius: 50%;
+            float: left;
+            transition: all .5s ease-in;
+        }
+        .active .iconBox{
+            background: url("/assets/images/icones/moins48px.png") no-repeat -8px -9px ;
+        }
+        .active{
+            /* background-color: orange; */
+            color: white;
+        }
+        .panelBox{
+            padding: 0 15px;
+            border-left: 1px solid var(--brun_color);
+            margin-left: 25px ;
+            font-size: 14px;
+            text-align: justify;
+            overflow: hidden;
+            /* max-height: 300px; */ /*Pour voir/pasVoir le texte*/
+            max-height: 0;
+            transition: all .5s ease-in;
+        }
+
     }
 
 /* SKILLS */
