@@ -281,6 +281,7 @@ h5{
     padding-bottom: 1vh;
     margin-left: 7vw;
     justify-content: space-around;
+    overflow: hidden;
 }
 .nav-link{
     display: flex;
@@ -290,10 +291,25 @@ h5{
 }
 .nav-item{
     font-size: 1.6vw;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 .nav-item a:hover{
     color: var(--gris_color);
     transition:.3s;
+}
+
+.activeNav{
+    color: var(--gris_color);
+}
+
+.iconeNav{
+    display: none;
 }
 
 /* HEADER */
@@ -367,6 +383,10 @@ h5{
     margin-top: 7vh;
     margin-bottom: 1.5vw;
     /*text-align: center;*/
+    /* font-size: 1.5vw; */
+}
+
+.corpsTexte{
     font-size: 1.5vw;
 }
 
@@ -514,7 +534,7 @@ h5{
         }
         .panelBox{
             padding: 0 15px;
-            border-left: 1px solid var(--brun_color);
+            /* border-left: 1px solid var(--brun_color); */
             margin-left: 25px ;
             font-size: 14px;
             text-align: justify;
@@ -906,6 +926,89 @@ footer{
     .photo{
         min-width: 100px;
     }
+}
 
-    /* ! Faire responsive Graphiques apd 500 et moins !!! */
+    /* TODO RESPONSIVE 500 et moins*/
+    @media screen and (max-width: 500px) {
+        /* Menu Nav */
+        .nav-link span{
+            display: none;
+        }
+        .nav-item{
+            padding: 0;
+        }
+        .nav-icone{
+            max-height: 7vw;
+        }
+        #aboutMe-title{
+            margin-top: 2vh;
+        }
+
+        /* Taille Texte */
+        .corpsTexte{
+            font-size: 2.5vw;
+        }
+
+        /* Cadre Infos */
+        .infoContact{
+            width: 50%; /* taille cadre */
+        }
+        .info{
+            font-size: 2.5vw;
+        }
+
+        /* RESPONSIVE TIMELINE */
+        /* .box-timeline{
+            padding: 0;
+        } */
+        .box-timeline{
+            margin-bottom: 30px;
+        }
+        .ligne-timeline{
+            position: relative;
+            left: -150px;
+            width: 5px;
+        }
+        .rond{
+            left: calc(50% - 150px);
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+        }
+        .box{
+            left: calc(50% + 8vw);
+            width: 275px;
+            min-height: 100px;
+        }
+        #myStory{
+            margin-bottom: -50px;
+        }
+
+        .annee-timeline{
+            font-size: 20px;
+        }
+
+        .panelBox{
+            margin-left: 0;
+            padding: 0 5px 0 15px;
+        }
+
+
+        /* Skills */
+        .ligne-outil span{
+            display: none;
+        }
+        .liste-outils{
+            left: -160px;
+        }
+        .img-graphique{
+            margin-right: 25px;
+        }
+
+        h2{
+            font-size: 6.5vw;
+        }
+        /* TODO Modals Portfolio prob avec flèche + prob dimensions + prob avec logo git et langage */
+        /* TODO Modals About Me Voir le portfolio et downolad trop grand. + Cadre Infos écrit trop petit + prob décalage Hobbys et trop petit + Vidéo pas ajustée. */
+
     }
