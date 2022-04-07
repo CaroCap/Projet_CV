@@ -37,6 +37,7 @@ let croixModals = document.getElementsByClassName("close");
 for (let indexModal = 0; indexModal < croixModals.length; indexModal++) {
   croixModals[indexModal].addEventListener("click", fermerModal);
 }
+
 function fermerModal(event) {
   modal.style.display = "none";
 }
@@ -79,79 +80,78 @@ function filtreLanguage(e) {
   } else {
     languages.forEach((language) => {
       language.classList.contains(filtre) // Est-ce que le langugage se trouve dans la classe de la div
-        ? language.classList.remove("hidden") // si oui => enlever class hidden
-        : language.classList.add("hidden"); // si non => ajouter class hidden
+        ?
+        language.classList.remove("hidden") // si oui => enlever class hidden
+        :
+        language.classList.add("hidden"); // si non => ajouter class hidden
     });
   }
 }
+
 
 // CHANGEMENT MODAL PREV/NEXT
 
 //Tableau des Flèches
 let fleches = document.getElementsByClassName("fleche");
 for (let indexModal = 0; indexModal < fleches.length; indexModal++) {
-    fleches[indexModal].addEventListener("click", switchModal);
+  fleches[indexModal].addEventListener("click", switchModal);
 }
+// Récupération de tous les Modals
+let modals = document.getElementsByClassName("modal");
+// Dernier Modal
+let lastmodalId = modals[modals.length-1].id
 
 let idModalCourant;
 let idModalSwitched;
-let nbModalCourant;
-let nbModalSwitched;
-
-// NOMBRE MAX DE MODAL
-let nbMaxModal = fleches.length/2;
 
 function switchModal(event) {
-    event.preventDefault();
-    // récupération de l'id du parent du bouton ==> this.parentElement.id
-    idModalCourant = this.parentElement.id;
-    // récupération de numéro du Modal
-    nbModalCourant = parseInt(idModalCourant[idModalCourant.length - 1]);
-    // récupération id flèche pour savoir si précédent ou next
-    sensFleche = this.id;
-    if (sensFleche = "previousArrow"){
-        if (nbModalCourant - 1 <= 0) 
-        {
-            nbModalSwitched = nbMaxModal;
-        } else {
-            nbModalSwitched = nbModalCourant - 1;
-        }
-    } else{
-        if (nbModalCourant + 1 >= nbMaxModal) 
-        {
-        nbModalNext = 1;
-        } else {
-            nbModalSwitched = nbModalCourant + 1;
-        }
-    }
+  event.preventDefault();
+  // récupération id flèche pour savoir si précédent ou next
+  sensFleche = this.id;
 
-    // Nommer identifiant du New Modal
-    idModalSwitched = "modalPortfolio"+nbModalSwitched;
-    // Fermer Modal actuel
-    modal.style.display = "none";
-    // Ouvrir Modal Précédent
-    modal = document.getElementById(idModalSwitched)
-    modal.style.display = "block";
+  if (sensFleche == "previousArrow") {
+    // récupération de l'id du modal précédent ==> this.parentElement.previousElementSibling.id
+    idModalSwitched = this.parentElement.previousElementSibling.id
+    // Si l'id du modal ne contient pas "modalPortfolio" alors indexOf donne -1
+    if (idModalSwitched.indexOf("modalPortfolio") == -1) {
+      // Si index donne -1 c'est qu'on est au premier modal et qu'il faut retourner au dernier
+      idModalSwitched = lastmodalId;
+    } 
+  }
+  else {
+    // récupération de l'id du modal suivant ==> this.parentElement.nextElementSibling.id
+    idModalSwitched = this.parentElement.nextElementSibling.id;
+    // Si l'id du modal ne contient pas "modalPortfolio" alors indexOf donne -1
+    if (idModalSwitched.indexOf("modalPortfolio") == -1) {
+      // Si index donne -1 c'est qu'on est au dernier modal et qu'il faut retourner au premier
+      idModalSwitched = "modalPortfolio1";
+    }
+  }
+
+// Fermer Modal actuel
+modal.style.display = "none";
+// Ouvrir Modal Précédent
+modal = document.getElementById(idModalSwitched)
+modal.style.display = "block";
 }
 
 
 // COLLAPSE TIMELINE
 var acc = document.getElementsByClassName('accordion');
-var i;
 var len = acc.length;
-for (i = 0; i < len; i++) {
-  acc[i].addEventListener('click', function(){
+for (let i = 0; i < len; i++) {
+  acc[i].addEventListener('click', function () {
     this.classList.toggle('active');
     var panel = this.nextElementSibling;
     var box = this.parentElement;
     // var box = $(this).parent();
-    if(panel.style.maxHeight){
+    if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
-    } else{
+    } else {
       panel.style.maxHeight = panel.scrollHeight + 'px';
       box.classList.add("indexTop");
     }
 
   });
-  
+
 }
