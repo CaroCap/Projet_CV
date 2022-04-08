@@ -490,8 +490,18 @@ h5{
     line-height: 20px;
     margin: 10px 0 20px 0;
     font-size: 13px;
-
 }
+.description-timeline li{
+    margin-top: 10px;
+}
+/* Actif en responsif */
+.plusIcone, .moinsIcone{
+    font-weight: bolder;
+    font-size: 28px;
+    display: none;
+    transition: all .5s ease-in;
+}
+
     /* RESPONSIVE TIMELINE */
     @media screen and (max-width: 1000px) {
         .ligne-timeline{
@@ -516,21 +526,21 @@ h5{
             width: 100%;
             cursor: pointer;
         }
-        .iconBox{
-            margin: 0 -10px;
-            width: 30px;
-            height: 30px;
-            background: url("/assets/images/icones/plus48px.png") no-repeat -8px -9px;
-            border-radius: 50%;
-            float: left;
-            transition: all .5s ease-in;
-        }
-        .active .iconBox{
-            background: url("/assets/images/icones/moins48px.png") no-repeat -8px -9px ;
-        }
         .active{
             /* background-color: orange; */
             color: white;
+        }
+        .plusIcone{
+            display: inline;
+            position: absolute;
+            right: 15px;
+            top: 1px;
+        }
+        .active .moinsIcone{
+            display: inline;
+            position: absolute;
+            right: 15px;
+            top: 1px;
         }
         .panelBox{
             padding: 0 15px;
@@ -930,6 +940,15 @@ footer{
 
     /* TODO RESPONSIVE 500 et moins*/
     @media screen and (max-width: 500px) {
+        /* Taille Texte */
+        .corpsTexte{
+            font-size: 2.5vw;
+        }
+
+        h2{
+            font-size: 6.5vw;
+        }
+        
         /* Menu Nav */
         .nav-link span{
             display: none;
@@ -942,11 +961,6 @@ footer{
         }
         #aboutMe-title{
             margin-top: 2vh;
-        }
-
-        /* Taille Texte */
-        .corpsTexte{
-            font-size: 2.5vw;
         }
 
         /* Cadre Infos */
@@ -987,6 +1001,9 @@ footer{
         .annee-timeline{
             font-size: 20px;
         }
+        .titre-timeline{
+            font-size: 12px;
+        }
 
         .panelBox{
             margin-left: 0;
@@ -1005,10 +1022,10 @@ footer{
             margin-right: 25px;
         }
 
-        h2{
-            font-size: 6.5vw;
-        }
         /* TODO Modals Portfolio prob avec flèche + prob dimensions + prob avec logo git et langage */
+        .modal .recherche{
+            text-align: justify;
+        }
         /* TODO Modals About Me Voir le portfolio et downolad trop grand. + Cadre Infos écrit trop petit + prob décalage Hobbys et trop petit + Vidéo pas ajustée. */
 
     }

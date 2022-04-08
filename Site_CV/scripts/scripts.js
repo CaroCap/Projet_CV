@@ -144,12 +144,16 @@ for (let i = 0; i < len; i++) {
     this.classList.toggle('active');
     var panel = this.nextElementSibling;
     var box = this.parentElement;
+    var icone = this.firstChild.nextElementSibling;
+    console.log(icone);
     // var box = $(this).parent();
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
+      icone.style.display="inline";
     } else {
       panel.style.maxHeight = panel.scrollHeight + 'px';
       box.classList.add("indexTop");
+      icone.style.display="none";
     }
 
   });
