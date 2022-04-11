@@ -1110,7 +1110,7 @@ footer{
     }
 
 
-/* TODO Modals Portfolio prob avec flèche + prob dimensions + prob avec logo git et langage */
+/* Modals Portfolio */
     /* Vidéo */
     .barreBrune{
         width: 100%; 
@@ -1213,6 +1213,7 @@ footer{
     }
     .portfolioContenu span{
         padding: 20px;
+        text-align: start;
     }
 
 }
