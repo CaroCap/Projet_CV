@@ -1218,3 +1218,263 @@ footer{
 
 }
 
+
+/* TODO Responsive paysage */
+/* RESPONSIVE 500px et moins*/
+@media screen and (max-height: 500px) {
+    /* Taille Texte */
+    .corpsTexte{
+        font-size: 2.5vw;
+    }
+
+    h2{
+        font-size: 6.5vw;
+    }
+    
+    /* Menu Nav */
+    .nav-link span{
+        display: none;
+    }
+    .nav-item{
+        padding: 0;
+    }
+    .nav-icone{
+        max-height: 7vw;
+    }
+    #aboutMe-title{
+        margin-top: 2vh;
+    }
+
+    /* Cadre Infos */
+    .infoContact{
+        width: 50%; /* taille cadre */
+    }
+    .info{
+        font-size: 2.5vw;
+    }
+
+/* RESPONSIVE TIMELINE */
+    /* .box-timeline{
+        padding: 0;
+    } */
+    .box-timeline{
+        margin-bottom: 30px;
+    }
+    .ligne-timeline{
+        position: relative;
+        left: -150px;
+        width: 5px;
+    }
+    .rond{
+        left: calc(50% - 150px);
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+    .box{
+        left: calc(50% + 8vw);
+        width: 275px;
+        min-height: 100px;
+    }
+    #myStory{
+        margin-bottom: -50px;
+    }
+
+    .annee-timeline{
+        font-size: 20px;
+    }
+    .titre-timeline{
+        font-size: 12px;
+    }
+
+    .panelBox{
+        margin-left: 0;
+        padding: 0 5px 0 15px;
+    }
+
+    /* Skills */
+    .skills-outils{
+        flex-direction: column;
+        padding: 0;
+    }
+    .box-outils{
+        width: 310px;
+    }
+    .ligne-outil span{
+        display: none;
+    }
+    .liste-outils{
+        left: -160px;
+    }
+    .img-graphique{
+        margin-right: 25px;
+    }
+
+        /* Modals About Me */
+    .modal .recherche{
+        /* text-align: justify; */
+        font-size: 2.2vw;
+    }
+    .modal .infoContact{
+        width: 90%; /* taille cadre */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .modal .info{
+        font-size: 2.2vw;
+    }
+    .modal .info .font-titre{
+        font-size: 2.6vw;
+    }
+
+    /* Container Hobbys */
+    /* .modal .justifyAround{
+        justify-content: center;
+    } */
+    .modal .hobby{
+        width: 45%;
+        font-size: 2vw;
+        padding: 0;
+        margin: 1vw;
+    }
+    .modal .hobby .font-titre{
+        font-size: 2.6vw;
+        letter-spacing: 2px;
+    }
+    .videoKB iframe{
+        margin: 20px 0 80px 0;
+        width: 400px;
+        height: 250px;
+    }
+    .hobbys.container{
+        padding: 0;
+    }
+
+
+/* Modals Portfolio */
+    /* Vidéo */
+    .barreBrune{
+        width: 100%; 
+        height: 20%; 
+        border-radius: 15px 15px 0 0 ;
+        /* padding: 50px; */
+    }
+    .barrePortfolioContenu{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        /* padding-left: 15px;
+        padding-right: 15px; */
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .langagesPortfolio{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        /* padding-left: 15px;
+        padding-right: 15px; */
+    }
+    .langageProgra{
+        margin: 0;
+        height: 40%;
+        padding: 0;
+        width: 50%;
+    }
+    /* Taille Icones Git et SiteWeb */
+    .sitesPortfolioContenu{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+        margin: auto;
+    }
+    .sitesPortfolioContenu div{
+        width: 40%;
+    }
+    .sitesPortfolioContenu a .taille30{
+        width: 35%;
+    }
+    /* Faire disparaitre le texte en dessous des logos Git et SiteWeb */
+    .sitesPortfolioContenu .beige-color{
+        display: none;    
+    }
+
+    #previousArrow {
+        left: -5px;
+    }
+    #nextArrow {
+        right: -5px;
+    }
+    .close{
+        color: var(--beige_color);
+        font-size: 6vw;
+        margin-right: -4.5vw;
+        margin-top: -2vh;
+    }
+
+    .portfolio  .modal-content{
+        height: 86vh;
+        margin: 7vh auto;
+        padding: 0;
+    }
+    .portfolioContenu{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        /* padding-left: 15px;
+        padding-right: 15px; */
+        height: 80%;
+        margin: 10% 1%;
+    }
+    .portfolioContenu h2{
+        margin-top: 5px;
+        margin-bottom: 0;
+        font-size: 3.5vw;
+        width: 100%;
+        align-self: flex-start;
+    }
+    .portfolioContenu .justifie{
+        width: 60%;
+    }
+    .portfolioContenu span{
+        padding-top: 0;
+        font-size: 1.8vw;
+        text-align: start;
+    }
+    .portfolioContenu .videoContent{
+        width: 40%;
+        max-height: 100%;
+    }
+    .videoContent .video, .videoContent img{
+        max-width: 80%;
+        margin-left: 6%;
+    }
+    /* .videoContent{
+        max-height: 50%;
+        width: 100%;
+    }
+    .video{
+        max-width: 80%;
+        max-height: 100%;
+        background-color: transparent;
+        text-align: center;
+    }    */
+
+}
