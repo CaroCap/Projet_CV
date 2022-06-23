@@ -137,6 +137,7 @@ modal.style.display = "block";
 
 
 // COLLAPSE TIMELINE
+// TODO Ne pas mettre l'event click si écran full screen
 var acc = document.getElementsByClassName('accordion');
 var len = acc.length;
 for (let i = 0; i < len; i++) {
@@ -145,8 +146,6 @@ for (let i = 0; i < len; i++) {
     var panel = this.nextElementSibling;
     var box = this.parentElement;
     var icone = this.firstChild.nextElementSibling;
-    console.log(icone);
-    // var box = $(this).parent();
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
       icone.style.display="inline";
@@ -155,7 +154,5 @@ for (let i = 0; i < len; i++) {
       box.classList.add("indexTop");
       icone.style.display="none";
     }
-
   });
-
 }
